@@ -1,0 +1,45 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Codit - a new and easy-to-use programming language that runs on JS</title>
+
+	<style>
+		.container {
+			position: relative;
+			width: 100%;
+			max-width: 1000px;
+			margin: 0 auto;
+		}
+
+		textarea {
+			width: 100%;
+			height: 60%;
+			font-size: 22px;
+		}
+
+		#output {
+			font-family: monospace;
+		}
+
+		#output small {
+			padding-left: 10px;
+			font-style: italic;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+
+		<textarea name="code" id="code" cols="100" rows="50"></textarea>
+		<br />
+		<input type="button" value="compile!" id="compile" />
+		<div id="output"></div>
+	</div>
+
+	<script src="jquery.js" ></script>
+
+	<script src="codit.compiler.js" ></script>
+	<script src="codit.functions.js" ></script>
+	<script src="codit.workspace.js" ></script>
+</body>
+</html>
